@@ -29,10 +29,6 @@ RUN wget http://archive.ubuntu.com/ubuntu/dists/bionic-updates/main/installer-am
 # Configure PXE and TFTP
 COPY tftpboot/ /var/lib/tftpboot
 
-# Configure apache
-#RUN mkdir -p /var/www/html
-#COPY ubuntu/ /var/www/html
-
 # Configure DNSMASQ
 COPY etc/ /etc
 
